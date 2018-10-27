@@ -12,7 +12,12 @@
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+        <script>
+            function redir() {
+                document.location = document.getElementById("pin").value + "/index.html";
+            }
+        </script>
 	</head>
 	<body>
 
@@ -21,7 +26,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="../index.html">VMBC Blue Ridge - Judges' Commentary</a></h1>
+						<h1><a href="/index.html">VMBC Blue Ridge - Judges' Commentary</a></h1>
 					</header>
 
 
@@ -29,78 +34,14 @@
 					<div id="main">
 				
 						<h3>Holston High School</h3>
-						
+
 						<!-- Posts List -->
 							<section>
 								<ul class="posts">
 									<li>
-										<article>
-											<header>
-												<h3><a href="imusic.wav">Individual Music</a> - Rich Zamperini</h3>
-											</header>
-											<a href="imusic.wav" class="image"><img src="../images/imusic.png" alt="" /></a>
-										</article>
-                                    </li>
-									<li>
-										<article>
-											<header>
-												<h3><a href="emusic.wav">Ensemble Music</a> - Dr. Wayne Gallops</h3>
-											</header>
-											<a href="emusic.wav" class="image"><img src="../images/emusic.png" alt="" /></a>
-										</article>
-									</li>
-									<li>
-										<article>
-											<header>
-												<h3><a href="gemusic.wav">General Effect Music</a> - Dr. Chris Sharp</h3>
-											</header>
-											<a href="gemusic.wav" class="image"><img src="../images/gemusic.png" alt="" /></a>
-										</article>
-									</li>
-	
-									<li>
-										<article>
-											<header>
-												<h3><a href="gevisual.wav">General Effect Visual</a> - Mike Aycock</h3>
-											</header>
-											<a href="gevisual.wav" class="image"><img src="../images/gevisual.png" alt="" /></a>
-										</article>
-									</li>
-		
-									<li>
-										<article>
-											<header>
-												<h3><a href="evisual.wav">Ensemble Visual</a> - Ira Jenkins</h3>
-											</header>
-											<a href="evisual.wav" class="image"><img src="../images/evisual.png" alt="" /></a>
-										</article>
-									</li>
-			
-									<li>
-										<article>
-											<header>
-												<h3><a href="ivisual.wav">Individual Visual</a> - Jody Jones</h3>
-											</header>
-											<a href="ivisual.wav" class="image"><img src="../images/ivisual.png" alt="" /></a>
-										</article>
-									</li>
-				
-									<li>
-										<article>
-											<header>
-												<h3><a href="perc.wav">Percussion</a> - Jamey Lefevers</h3>
-											</header>
-											<a href="perc.wav" class="image"><img src="../images/perc.png" alt="" /></a>
-										</article>
-									</li>
-
-									<li>
-										<article>
-											<header>
-												<h3><a href="guard.wav">Color Guard</a> - Jonathan Colvin</h3>
-											</header>
-											<a href="guard.wav" class="image"><img src="../images/guard.png" alt="" /></a>
-										</article>
+                                        Enter your school's PIN code, then click 'Access Commentary'
+                                        <input type="text" name="pin" id="pin" width="15" maxlen="6" />
+                                        <button id="btn" onClick="redir()">Access Commentary</button>
 									</li>
 													
 								</ul>
